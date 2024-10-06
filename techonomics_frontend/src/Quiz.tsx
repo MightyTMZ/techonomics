@@ -42,7 +42,7 @@ const Quiz: React.FC = () => {
     // nothing here, just a dummy reference
   }
 
-  const backendServerAddress = "https://omniwavenexus.pythonanywhere.com/";
+  const backendServerAddress = "https://omniwavenexus.pythonanywhere.com";
 
   useEffect(() => {
     fetchCategories();
