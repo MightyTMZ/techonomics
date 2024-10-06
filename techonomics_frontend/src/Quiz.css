@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for background and text color */
+  font-family: "Poppins", sans-serif;
+}
+
+@font-face {
+  font-family: crypto;
+  src: url(fonts/CryptoScamRegular-rgXvA.ttf);
+}
+
+@font-face {
+  font-family: libre-baskerville-regular;
+  src: url(fonts/LibreBaskerville-Regular.ttf);
+}
+
+@font-face {
+  font-family: libre-baskerville-bold;
+  src: url(fonts/LibreBaskerville-Bold.ttf);
+}
+
+.crypto-font {
+  font-family: crypto;
+}
+/*
+  .libre-baskerville-regular {
+    font-family: libre-baskerville-regular;
+  }
+  
+  .libre-baskerville-bold {
+    font-family: libre-baskerville-bold;
+  }*/
+
+.toggle-switch {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Light Mode Styles */
+.light-mode {
+  background: #f8f9fa; /* Light background */
+  color: #212529; /* Dark text */
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background: #343a40; /* Dark background */
+  color: #ffffff; /* White text */
+}
+
+/* Container Styles */
+.container {
+  padding: 20px;
+  border-radius: 20px;
+}
+
+/* Heading Styles */
+h1 {
+  font-weight: bold;
+}
+
+/* Category Dropdown Heading */
+.category-dropdown h2,
+h2 {
+  color: inherit; /* Ensures h2 inherits the color based on the mode */
+}
+
+/* Card Styles */
+.card {
+  background-color: inherit; /* Use inherited background */
+  color: inherit; /* Use inherited text color */
+}
+
+/* Form Elements */
+.form-check {
+  margin-bottom: 10px;
+}
+
+/* Button Styles */
+.btn {
+  margin-top: 10px; /* Space between buttons */
+}
+
+/* Alert Styles */
+.alert {
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for alert background and text color */
+}
+
+/* Additional Styles for Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .btn {
+    width: 100%; /* Full-width buttons on small screens */
+  }
+}
+
+.dark-card {
+  background: #333;
+  color: white;
+  border: 1px solid #444;
+}
+
+.dark-btn {
+  background: #555;
+  border-color: #666;
+}
+
+.dark-alert {
+  background: #444;
+  color: white;
+}
+
+.dark-alert-info {
+  background: #555;
+  color: white;
+}
+
+.text-white {
+  color: white;
+}

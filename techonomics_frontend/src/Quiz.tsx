@@ -42,7 +42,7 @@ const Quiz: React.FC = () => {
     // nothing here, just a dummy reference
   }
 
-  const backendServerAddress = "https://quiztrepreneur.pythonanywhere.com";
+  const backendServerAddress = "https://omniwavenexus.pythonanywhere.com/";
 
   useEffect(() => {
     fetchCategories();
@@ -212,8 +212,7 @@ const Quiz: React.FC = () => {
   // }
 
   const rootHTML = document.getElementsByTagName("html")[0];
-  const rootReactDiv = document.getElementById('root');
-
+  const rootReactDiv = document.getElementById("root");
 
   if (isDarkMode) {
     if (rootHTML && rootReactDiv) {
@@ -242,7 +241,7 @@ const Quiz: React.FC = () => {
               className="text-center mb-4 crypto-font"
               style={{ letterSpacing: "3px", fontWeight: "400" }}
             >
-              QUIZTREPRENEUR
+              TECHONOMICS
             </h1>
             {/* Dark Mode Toggle */}
             <div className="text-center mb-4">
@@ -259,8 +258,18 @@ const Quiz: React.FC = () => {
                 “Most of what I learned as an entrepreneur was by trial and
                 error.”
                 <footer>— Gordon Moore</footer>
+              </blockquote>
+
+              <blockquote>
+                “Innovation distinguishes between a leader and a follower.”
+                <footer>— Steve Jobs</footer>
                 <div style={{ height: "30px" }}></div>
               </blockquote>
+              <p>
+                Start today by learning through trial and error with{" "}
+                <strong>Techonomics</strong> made by{" "}
+                <a href="http://orbitviewmedia.com/" target="_blank" style={{ textDecoration: "none" }}>OrbitView</a>
+              </p>
               <div className={isDarkMode ? "Light" : "Dark"}>
                 {/* Dynamic Categories */}
                 <div className="category-dropdown mb-3">
